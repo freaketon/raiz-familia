@@ -209,6 +209,30 @@ button { font: inherit; }
 .status-strip dt { color: var(--ink-soft); font-size: .68rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .status-strip dd { margin: .25rem 0 0; font-family: var(--serif); font-size: 1.05rem; }
 
+.separate-paths {
+  padding: clamp(5rem, 9vw, 9rem) clamp(1.25rem, 5vw, 5rem);
+  color: var(--cream);
+  background: #0b2428;
+}
+.paths-heading { margin-bottom: 3rem; }
+.paths-heading .eyebrow { color: var(--gold-light); }
+.paths-heading h2 { max-width: 980px; margin: 0 0 1.5rem; font-family: var(--serif); font-size: clamp(2.5rem, 4.7vw, 5.4rem); font-weight: 400; letter-spacing: -.04em; line-height: 1; }
+.paths-heading p { max-width: 820px; margin: 0; color: rgba(255,255,255,.66); font-family: var(--serif); font-size: 1.2rem; }
+.pathway-grid { display: grid; max-width: var(--max); grid-template-columns: minmax(0, 1fr) minmax(180px, .42fr) minmax(0, 1fr); gap: 1px; margin: 0 auto; background: rgba(255,255,255,.14); }
+.pathway-card { display: grid; min-height: 320px; grid-template-columns: auto 1fr; gap: 1.5rem; padding: clamp(2rem, 4vw, 4rem); color: white; text-decoration: none; background: #17363a; transition: background .2s ease; }
+.pathway-card:hover { background: #21464a; }
+.pathway-card > span { display: grid; width: 54px; height: 54px; place-items: center; border: 1px solid var(--gold); border-radius: 50%; color: var(--gold-light); font-family: var(--serif); font-size: 1.5rem; }
+.pathway-card div { display: flex; flex-direction: column; }
+.pathway-card small { color: var(--gold-light); font-size: .7rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.pathway-card strong { max-width: 430px; margin-top: 1rem; font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 3rem); font-weight: 400; line-height: 1.08; }
+.pathway-card em { margin-top: auto; padding-top: 2rem; color: rgba(255,255,255,.68); font-size: .72rem; font-style: normal; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.lau-card { background: #26382e; }
+.lau-card:hover { background: #314a3b; }
+.future-meeting { display: flex; min-height: 320px; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; padding: 2rem; text-align: center; background: #102c31; }
+.future-meeting i { display: block; width: 1px; height: 54px; background: repeating-linear-gradient(to bottom, var(--gold) 0 4px, transparent 4px 9px); }
+.future-meeting strong { color: var(--gold-light); font-family: var(--serif); font-size: 1.2rem; font-weight: 400; }
+.future-meeting span { max-width: 190px; color: rgba(255,255,255,.52); font-size: .72rem; line-height: 1.5; }
+
 .manifesto {
   display: grid;
   max-width: var(--max);
@@ -360,6 +384,8 @@ td { padding: .8rem; border: 1px solid var(--line); vertical-align: top; }
   .site-header nav a { padding: 0 .55rem; font-size: .68rem; }
   .home-hero { grid-template-columns: .9fr 1.1fr; }
   .hero-copy { padding: clamp(3rem, 5vw, 5rem); }
+  .pathway-grid { grid-template-columns: 1fr; }
+  .future-meeting { min-height: 210px; }
   .book-card { grid-template-columns: 1fr; }
   .book-card-image { min-height: 430px; }
   .book-hero { grid-template-columns: .8fr 1.2fr; }
