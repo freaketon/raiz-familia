@@ -379,7 +379,7 @@ button { font: inherit; }
 .prose blockquote { margin: 2.4rem 0; padding: 1.8rem 0 1.8rem 2rem; color: var(--ink); font-size: 1.4rem; line-height: 1.55; border-left: 3px solid var(--book-accent); }
 .prose ul, .prose ol { margin: 1.5rem 0 2rem; padding-left: 1.4rem; }
 .prose li { margin-bottom: .65rem; }
-.prose code { padding: .14rem .35rem; font-family: Consolas, monospace; font-size: .78em; background: rgba(23,40,38,.07); }
+.prose code { padding: .14rem .35rem; overflow-wrap: anywhere; word-break: break-word; font-family: Consolas, monospace; font-size: .78em; background: rgba(23,40,38,.07); }
 .prose pre { overflow-x: auto; margin: 2rem 0; padding: 1.4rem; color: #eff4ec; background: var(--night); }
 .prose pre code { display: block; padding: 0; overflow-wrap: anywhere; white-space: pre-wrap; color: inherit; background: transparent; }
 .prose hr { margin: 4rem 0; border: 0; border-top: 1px solid var(--line); }
