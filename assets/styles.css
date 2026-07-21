@@ -357,6 +357,7 @@ button { font: inherit; }
 .chapter-nav a span { color: var(--book-accent); font-family: var(--sans); font-size: .68rem; font-weight: 800; }
 .chapter-nav a:hover { color: var(--ink); }
 .chapters { min-width: 0; }
+.chapter { scroll-margin-top: 6rem; }
 .chapter + .chapter { margin-top: 8rem; padding-top: 8rem; border-top: 1px solid var(--line); }
 .chapter-kicker { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 2.5rem; color: var(--ink-soft); font-size: .65rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
 .prose { font-family: var(--serif); font-size: 1.15rem; line-height: 1.83; }
