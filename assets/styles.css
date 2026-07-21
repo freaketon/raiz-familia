@@ -381,7 +381,7 @@ button { font: inherit; }
 .prose li { margin-bottom: .65rem; }
 .prose code { padding: .14rem .35rem; font-family: Consolas, monospace; font-size: .78em; background: rgba(23,40,38,.07); }
 .prose pre { overflow-x: auto; margin: 2rem 0; padding: 1.4rem; color: #eff4ec; background: var(--night); }
-.prose pre code { padding: 0; color: inherit; background: transparent; }
+.prose pre code { display: block; padding: 0; overflow-wrap: anywhere; white-space: pre-wrap; color: inherit; background: transparent; }
 .prose hr { margin: 4rem 0; border: 0; border-top: 1px solid var(--line); }
 .table-scroll { overflow-x: auto; margin: 2rem 0; }
 table { width: 100%; border-collapse: collapse; font-family: var(--sans); font-size: .88rem; }
