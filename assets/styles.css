@@ -21,7 +21,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: clip; }
 body {
   margin: 0;
   overflow-x: hidden;
@@ -350,6 +350,17 @@ button { font: inherit; }
 .back-link { align-self: flex-start; margin-bottom: 4rem; color: rgba(255,255,255,.67); font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
 .classification { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 2.2rem; }
 .classification span { padding: .45rem .75rem; border: 1px solid rgba(255,255,255,.2); color: rgba(255,255,255,.7); font-size: .65rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.book-boundary {
+  display: grid;
+  max-width: 760px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 2.4rem 0 0;
+  background: rgba(255,255,255,.18);
+}
+.book-boundary div { padding: 1rem 1.15rem; background: rgba(9,30,33,.7); }
+.book-boundary dt { color: var(--gold-light); font-size: .62rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+.book-boundary dd { margin: .35rem 0 0; color: rgba(255,255,255,.76); font-family: var(--serif); font-size: .92rem; line-height: 1.48; }
 .reader-layout { display: grid; max-width: 1320px; grid-template-columns: 260px minmax(0, 760px); gap: clamp(3rem, 8vw, 9rem); margin: 0 auto; padding: clamp(5rem, 9vw, 10rem) clamp(1.25rem, 5vw, 5rem); justify-content: center; align-items: start; }
 .chapter-nav { position: sticky; top: 110px; display: grid; gap: .35rem; padding-top: .5rem; }
 .chapter-nav > p { margin: 0 0 1rem; color: var(--ink-soft); font-size: .67rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
@@ -444,6 +455,7 @@ td { padding: .8rem; border: 1px solid var(--line); vertical-align: top; }
   .book-card-image { min-height: 72svh; }
   .book-card-copy { min-height: 420px; }
   .book-hero-copy { padding-top: 3.5rem; }
+  .book-boundary { grid-template-columns: 1fr; }
   .back-link { margin-bottom: 3rem; }
   .book-hero h1 { font-size: clamp(3.15rem, 16vw, 5rem); }
   .chapter-nav { grid-template-columns: 1fr; }
@@ -463,6 +475,9 @@ td { padding: .8rem; border: 1px solid var(--line); vertical-align: top; }
   .book-hero { min-height: 0; grid-template-columns: 35% 65%; color: #000; background: #fff; page-break-after: always; }
   .book-hero-copy { padding: 2cm; }
   .book-hero .lede, .book-hero .book-subtitle { color: #333; }
+  .book-boundary { display: block; background: transparent; }
+  .book-boundary div { padding: .4cm 0; color: #000; background: transparent; border-top: 1px solid #aaa; }
+  .book-boundary dt, .book-boundary dd { color: #000; }
   .reader-layout { display: block; max-width: none; padding: 0; }
   .chapter { page-break-before: always; }
   .prose { max-width: none; font-size: 12pt; }
