@@ -32,7 +32,7 @@
       <div class="classification"><span>Edición familiar</span><span>Manuscrito vivo</span></div>
       <dl class="book-boundary">
         <div><dt>Alcance</dt><dd>Marta Lucía, Gómez–Yepes, Rendón–Suárez y la memoria familiar de Donmatías.</dd></div>
-        <div><dt>Frontera abierta</dt><dd>El bautismo de 1904 une a Alberto con Francisco y Romualda en grado B. El índice de matrimonios de Donmatías y el libro 1792–1898 ya están localizados, pero la entrada Alberto–Dolores de 1886 no. El TNG público no contiene a Alberto, Romualda ni al Francisco objetivo; es un negativo de catálogo. El acto propio de Romualda todavía debe decidir Yarce frente a Velásquez y comprobar 1866.</dd></div>
+        <div><dt>Frontera abierta</dt><dd>El bautismo de 1904 une a Alberto con Francisco y Romualda en grado B. Están preservadas las 54 imágenes del índice y las 514 del libro matrimonial; las 568 consultas públicas de personas devolvieron vacíos de cobertura, no ausencia. La entrada Alberto–Dolores de 1886 sigue sin página legible. El acto propio de Romualda debe decidir Yarce frente a Velásquez y comprobar 1866.</dd></div>
       </dl>
     </div>
   </section>
@@ -61,7 +61,9 @@
 <h2 id="frontera-documental-yepes-piedrahita">Frontera documental Yepes–Piedrahita</h2>
 <p>El catálogo público TNG pudo revisarse por completo. Mostró cinco perfiles Yepes, dieciocho Piedrahita y varios documentos de esos apellidos, pero no contiene a Alberto Yepes, Romualda Piedrahita ni al Francisco Yepes del siglo XIX que buscamos. El único Juan Francisco Yepes del catálogo nació en 1695 y queda excluido por cronología.</p>
 <p>Este resultado es un negativo de catálogo, no ausencia histórica. El libro vuelve a la parroquia: bautismo o matrimonio propio de Alberto, acto propio de Romualda y un documento que decida Yarce frente a Velásquez. Un apellido compatible dentro de una base grande no sustituye esos actos.</p>
-<p>Control: <code>06_REPORTS/AGENTS/A-P5/2026-07-24T010205-0700-cycle-012-live-tng-surname-and-document-audit.md</code>.</p></div>
+<p>La parroquia ya no está localizada sólo por título. Quedaron enumeradas las 54 imágenes del índice matrimonial y las 514 del libro 1792–1898. El endpoint público de personas se probó en las 568 imágenes y devolvió <code>{ }</code> en todas. Es una observación de cobertura del servicio, no ausencia de la familia. Ninguna miniatura dejó leer todavía <code>Yepes</code>, un folio o un año seguro para 1886.</p>
+<p>Control: <code>06_REPORTS/AGENTS/A-P5/2026-07-24T010205-0700-cycle-012-live-tng-surname-and-document-audit.md</code>.</p>
+<p>Control técnico completo: <code>06_REPORTS/AGENTS/A-P5/2026-07-24T070216-0700-cycle-013-complete-donmatias-image-record-probe.md</code>.</p></div>
             </article><article class="chapter" id="capitulo-2">
               <div class="chapter-kicker"><span>Cuaderno editorial</span><span>En construcción</span></div>
               <div class="prose"><h1 id="cuatro-nombres-en-un-bautismo">Cuatro nombres en un bautismo</h1>
@@ -86,6 +88,10 @@ maternos: Ramón Yepes + Nicolasa Correa</code></pre>
 <p>La boda atribuida a Alberto y Dolores tiene ahora un lugar de búsqueda exacto. El menú público de Nuestra Señora del Rosario, Donmatías, enumera un <code>Índice de matrimonios 1792-1984</code> de 54 imágenes y el libro <code>Matrimonios 1792-1898</code> de 514. La fecha propuesta, 20 de enero de 1886, cabe dentro del segundo rango.</p>
 <p>Los 54 ARK del índice quedaron enumerados y sus miniaturas ordenadas. A 200 píxeles no se puede leer con seguridad <code>Yepes</code>, el folio o la fecha. El resultado es <code>A_VERIFIED-CATALOG/DISPLAY</code> para los dos waypoints y <code>CANDIDATE-CORPUS</code> para la boda: libro localizado, entrada no localizada, <code>EXACT-EVENT-ARK-UNRESOLVED</code>.</p>
 <p>Cinco consultas exactas en la colección pública de matrimonios de Ancestry devolvieron cero. El control técnico confirmó fecha exacta y evento matrimonial, pero la misma respuesta mostró que el lugar podía comportarse como criterio de orden y no como filtro duro. Ese cero no reemplaza la lectura del índice parroquial.</p>
+<h2 id="quinientas-sesenta-y-ocho-im-genes-sin-una-persona-indexada">Quinientas sesenta y ocho imágenes sin una persona indexada</h2>
+<p>La revisión técnica completó ambos corpus. Conservó 54 de 54 ARK del índice y 514 de 514 del libro matrimonial, sin duplicados. Después consultó el endpoint público de personas indexadas para cada una de las 568 imágenes.</p>
+<p>Todas las respuestas fueron HTTP 200 y devolvieron sólo <code>{ }</code>. Eso significa que el servicio no entregó personas indexadas para esas imágenes. No significa que Alberto, Dolores, Francisco o Romualda estén ausentes de los libros.</p>
+<p>Las miniaturas de las imágenes 400–514 tampoco dejaron leer un año que permitiera acotar 1886. La imagen 33 continúa como página final candidata del índice, no como página Yepes demostrada. El corpus está completo como localizador técnico; la entrada matrimonial sigue <code>UNRESOLVED</code>.</p>
 <h2 id="tres-fuentes-adjuntas-que-pertenec-an-a-otros-bautismos">Tres fuentes adjuntas que pertenecían a otros bautismos</h2>
 <p>El perfil público de Romualda mostraba una fuente para su defunción y otra para su entierro del 29 de enero de 1866. La revisión de las tres imágenes adjuntas cambió el alcance de esos contadores.</p>
 <p>Ninguna imagen es el acto propio de Romualda. Son bautismos de 1813, 1854 y 1858. En uno, <code>Rumalda Piedraita</code> aparece como abuela paterna de la bautizada. En otro, la madre del niño figura sólo como <code>Piedraita</code>, sin nombre de pila. En el tercero, un abuelo o abuela conserva únicamente ese apellido.</p>
@@ -131,6 +137,7 @@ María Yarce como madre de Romualda                 D_ORAL / APORTADO</code></pr
 <li><code>06_REPORTS/AGENTS/A-P5/2026-07-22T172523-0700-cycle-006-romualda-attached-source-role-reversal.md</code></li>
 <li><code>06_REPORTS/AGENTS/A-P5/2026-07-23T040532-0700-cycle-008-yepes-piedrahita-published-cluster-and-package-resolution.md</code></li>
 <li><code>06_REPORTS/AGENTS/A-P5/2026-07-23T192240-0700-cycle-011-alberto-marriage-waypoints-and-romualda-control.md</code></li>
+<li><code>06_REPORTS/AGENTS/A-P5/2026-07-24T070216-0700-cycle-013-complete-donmatias-image-record-probe.md</code></li>
 <li>FamilySearch persona de Alberto <code>6DQL-Z2VK</code>; imagen pública preservada por el agente</li>
 <li>FamilySearch Memory <code>111999647</code>, velación de Francisco Piedraita y María Ignacia Velásquez</li>
 </ul></div>
