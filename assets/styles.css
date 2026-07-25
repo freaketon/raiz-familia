@@ -266,6 +266,8 @@ button { font: inherit; }
 }
 .evidence-key { display: grid; gap: .7rem; padding-top: 2rem; border-top: 1px solid var(--line); }
 .evidence-key span { display: flex; align-items: center; gap: .6rem; font-size: .75rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
+.evidence-key p { margin: .25rem 0 0; color: var(--ink-soft); font-family: var(--serif); font-size: .92rem; line-height: 1.55; }
+.certainty-mark { color: #8a5a12; font-family: var(--serif); font-style: normal; font-weight: 800; }
 .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; }
 .dot.documentary { background: #2f6b55; }
 .dot.reconstructed { background: #bd714e; }
@@ -350,6 +352,10 @@ button { font: inherit; }
 .back-link { align-self: flex-start; margin-bottom: 4rem; color: rgba(255,255,255,.67); font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
 .classification { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 2.2rem; }
 .classification span { padding: .45rem .75rem; border: 1px solid rgba(255,255,255,.2); color: rgba(255,255,255,.7); font-size: .65rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.narrative-key { display: grid; max-width: 760px; grid-template-columns: auto 1fr; gap: .8rem; margin-top: 1.4rem; padding: 1rem 1.15rem; border: 1px solid rgba(255,255,255,.18); background: rgba(9,30,33,.45); }
+.narrative-key .certainty-mark { color: var(--gold-light); font-size: 1.35rem; line-height: 1; }
+.narrative-key p { margin: 0; color: rgba(255,255,255,.72); font-family: var(--serif); font-size: .88rem; line-height: 1.5; }
+.narrative-key strong { color: white; }
 .book-boundary {
   display: grid;
   max-width: 760px;
@@ -383,6 +389,9 @@ button { font: inherit; }
 .prose pre { overflow-x: auto; margin: 2rem 0; padding: 1.4rem; color: #eff4ec; background: var(--night); }
 .prose pre code { display: block; padding: 0; overflow-wrap: anywhere; white-space: pre-wrap; color: inherit; background: transparent; }
 .prose hr { margin: 4rem 0; border: 0; border-top: 1px solid var(--line); }
+.narrative-image { margin: 3rem 0; }
+.narrative-image img { width: 100%; border: 1px solid var(--line); box-shadow: var(--shadow); }
+.narrative-image figcaption { margin-top: .75rem; color: var(--ink-soft); font-family: var(--sans); font-size: .75rem; line-height: 1.5; }
 .table-scroll { overflow-x: auto; margin: 2rem 0; }
 table { width: 100%; border-collapse: collapse; font-family: var(--sans); font-size: .88rem; }
 td { padding: .8rem; border: 1px solid var(--line); vertical-align: top; }
